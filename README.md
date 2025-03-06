@@ -40,8 +40,8 @@ This project is an official implementation of the paper **"Rewriting Photoplethy
 
 ### Data
 
-To run this project, you will need face video data (`face.npy`) and cPPG signal data (`cppg.npy`).
-These files must be created by the user and saved in the `./sample_data/` directory.
+To run this project, you will need face video data (`sample_face.npy`) and cPPG signal data (`sample_sig.npy`).
+These files must be created and saved in the `./sample_data/` directory.
 
 #### Data Format
 - `face.npy`: A `numpy` array of Shape `(N, H, W, 3)`, containing face video data with N frames (e.g. `(1873, 256, 256, 3)`)
@@ -51,3 +51,7 @@ These files must be created by the user and saved in the `./sample_data/` direct
 "cppg_signal": np.array([...]), # An array of cPPG signals of length N
 "cppg_bpm": np.array([...]) # An array of cPPG BPMs of length N
 }
+
+### Pretrained Weight
+To run this project, you will need face pretrained weight (`pretrained.pt`).
+These files must be created and saved in the `./weight/` directory.
