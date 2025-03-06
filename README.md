@@ -15,16 +15,30 @@ This project is an official implementation of the paper **"Rewriting Photoplethy
 - A new approach for **Privacy-preserving biometric video processing**
 
 ---
+## Results
 
-## Installation
+### Quantitative Evaluation
+```python
+## rPPG Embedding Accuracy Results
+results = {
+    "Method": ["OMIT", "LGI", "ICA", "CHROM", "POS", "PBV", "GREEN"],
+    "MAE ↓": [1.10, 1.30, 2.30, 3.00, 6.45, 26.82, 42.20],
+    "RMSE ↓": [5.02, 5.48, 10.56, 8.90, 15.16, 39.63, 53.08],
+    "PTE6 ↑": [95.00, 94.17, 92.50, 87.50, 77.31, 42.86, 20.00],
+    "PEARSON ↑": [0.9371, 0.9384, 0.2079, 0.8461, 0.4317, 0.1504, 0.2915]
+}
 
-### Prerequisites
-- Python 3.8+
-- PyTorch 1.12+ (CUDA support available)
-- OpenCV
-- NumPy
-- SciPy
-- Matplotlib
+## PSNR & SSIM Results
+visual_quality = {
+    "Dataset": ["PURE", "UBFC"],
+    "PSNR ↑": [24.61, 20.35],
+    "SSIM ↑": [0.638, 0.630]
+}
+
+df_visual = pd.DataFrame(visual_quality)
+print(df_visual)
+
+## Intsallation
 
 ### Install Dependencies
 ```bash
