@@ -9,7 +9,7 @@ import time
 
 # model.py
 # -------------------------------------------------------------------------------------
-# This model is based on the following implementation:
+# This model is implemented based on the following work:
 # Hao Zhou, Sunil Hadap, Kalyan Sunkavalli, David W. Jacobs. "Deep Single-Image Portrait
 # Relighting." ICCV, 2019.
 # Original code: https://github.com/zhhoper/DPR/blob/master/model/defineHourglass_512_gray_skip.py
