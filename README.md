@@ -5,7 +5,7 @@
 **rePPG** is a deep learning-based framework that generates a new synthetic image by inserting a desired rPPG signal while preserving the original facial image.
 The method is designed to preserve the facial biometric signals (e.g., heart rate) while maintaining the visual quality.
 
-This project is an official implementation of the ICCV 2025 paper **"Rewriting Photoplethysmography Signal to Video"**.
+This project is an official implementation of the paper **"Rewriting Photoplethysmography Signal to Video"**.
 
 ## Features
 - Modify rPPG signal while maintaining original face image
