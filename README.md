@@ -56,5 +56,6 @@ These files must be created and saved in the `./sample_data/` directory.
 ### Pretrained Weight
 To run this project, you will need face pretrained weight (`pretrained.pt`).
 These files must be created and saved in the `./weight/` directory.
-[[`Download Pretrained Weight`](https://drive.google.com/drive/folders/1MXKn3ozRouaI1jm7rPIAUauHvH6ZV2bx?dmr=1&ec=wgc-drive-hero-goto)]
+
+Download pretrained weight here: [[`Download Pretrained Weight`](https://drive.google.com/drive/folders/1MXKn3ozRouaI1jm7rPIAUauHvH6ZV2bx?dmr=1&ec=wgc-drive-hero-goto)]
 
