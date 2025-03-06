@@ -17,35 +17,24 @@ This project is an official implementation of the paper **"Rewriting Photoplethy
 ---
 ## Results
 
-### Signal Evaluation Result
+### Quantitative Evaluation
 
-```plaintext
-+--------+------+-------+--------+----------+
-| Method | MAE  | RMSE  | PTE6   | PEARSON  |
-+--------+------+-------+--------+----------+
-| OMIT   | 1.10 |  5.02 | 95.00  | 0.9371   |
-| LGI    | 1.30 |  5.48 | 94.17  | 0.9384   |
-| ICA    | 2.30 | 10.56 | 92.50  | 0.2079   |
-| CHROM  | 3.00 |  8.90 | 87.50  | 0.8461   |
-| POS    | 6.45 | 15.16 | 77.31  | 0.4317   |
-| PBV    | 26.82| 39.63 | 42.86  | 0.1504   |
-| GREEN  | 42.20| 53.08 | 20.00  | 0.2915   |
-+--------+------+-------+--------+----------+
+| Method | MAE ↓ | RMSE ↓ | PTE6 ↑ | PEARSON ↑ |
+|--------|-------|--------|--------|-----------|
+| OMIT   | 1.10  | 5.02   | 95.00  | 0.9371    |
+| LGI    | 1.30  | 5.48   | 94.17  | 0.9384    |
+| ICA    | 2.30  | 10.56  | 92.50  | 0.2079    |
+| CHROM  | 3.00  | 8.90   | 87.50  | 0.8461    |
+| POS    | 6.45  | 15.16  | 77.31  | 0.4317    |
+| PBV    | 26.82 | 39.63  | 42.86  | 0.1504    |
+| GREEN  | 42.20 | 53.08  | 20.00  | 0.2915    |
 
+### Visual Quality
 
-### Video Evaluation Result
-
-```plaintext
-+---------+--------+--------+
-| Dataset | PSNR   | SSIM   |
-+---------+--------+--------+
+| Dataset | PSNR ↑ | SSIM ↑ |
+|---------|--------|--------|
 | PURE    | 24.61  | 0.638  |
 | UBFC    | 20.35  | 0.630  |
-+---------+--------+--------+
-
-
-df_visual = pd.DataFrame(visual_quality)
-print(df_visual)
 
 ## Intsallation
 
