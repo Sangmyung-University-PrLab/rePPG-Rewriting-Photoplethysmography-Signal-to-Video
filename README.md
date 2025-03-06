@@ -17,23 +17,32 @@ This project is an official implementation of the paper **"Rewriting Photoplethy
 ---
 ## Results
 
-### Quantitative Evaluation
-```python
-## rPPG Embedding Accuracy Results
-results = {
-    "Method": ["OMIT", "LGI", "ICA", "CHROM", "POS", "PBV", "GREEN"],
-    "MAE ↓": [1.10, 1.30, 2.30, 3.00, 6.45, 26.82, 42.20],
-    "RMSE ↓": [5.02, 5.48, 10.56, 8.90, 15.16, 39.63, 53.08],
-    "PTE6 ↑": [95.00, 94.17, 92.50, 87.50, 77.31, 42.86, 20.00],
-    "PEARSON ↑": [0.9371, 0.9384, 0.2079, 0.8461, 0.4317, 0.1504, 0.2915]
-}
+### Signal Evaluation Result
 
-## PSNR & SSIM Results
-visual_quality = {
-    "Dataset": ["PURE", "UBFC"],
-    "PSNR ↑": [24.61, 20.35],
-    "SSIM ↑": [0.638, 0.630]
-}
+```plaintext
++--------+------+-------+--------+----------+
+| Method | MAE  | RMSE  | PTE6   | PEARSON  |
++--------+------+-------+--------+----------+
+| OMIT   | 1.10 |  5.02 | 95.00  | 0.9371   |
+| LGI    | 1.30 |  5.48 | 94.17  | 0.9384   |
+| ICA    | 2.30 | 10.56 | 92.50  | 0.2079   |
+| CHROM  | 3.00 |  8.90 | 87.50  | 0.8461   |
+| POS    | 6.45 | 15.16 | 77.31  | 0.4317   |
+| PBV    | 26.82| 39.63 | 42.86  | 0.1504   |
+| GREEN  | 42.20| 53.08 | 20.00  | 0.2915   |
++--------+------+-------+--------+----------+
+
+
+### Video Evaluation Result
+
+```plaintext
++---------+--------+--------+
+| Dataset | PSNR   | SSIM   |
++---------+--------+--------+
+| PURE    | 24.61  | 0.638  |
+| UBFC    | 20.35  | 0.630  |
++---------+--------+--------+
+
 
 df_visual = pd.DataFrame(visual_quality)
 print(df_visual)
