@@ -17,7 +17,7 @@ This project is an official implementation of the paper **"Rewriting Photoplethy
 ---
 ## Results
 
-### Quantitative Evaluation
+### Generated Signal Qaulity
 
 | Method | MAE ↓ | RMSE ↓ | PTE6 ↑ | PEARSON ↑ |
 |--------|-------|--------|--------|-----------|
@@ -29,7 +29,7 @@ This project is an official implementation of the paper **"Rewriting Photoplethy
 | PBV    | 26.82 | 39.63  | 42.86  | 0.1504    |
 | GREEN  | 42.20 | 53.08  | 20.00  | 0.2915    |
 
-### Visual Quality
+### Generated Visual Quality
 
 | Dataset | PSNR ↑ | SSIM ↑ |
 |---------|--------|--------|
