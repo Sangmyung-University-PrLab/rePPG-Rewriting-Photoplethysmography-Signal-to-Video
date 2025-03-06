@@ -56,3 +56,5 @@ These files must be created and saved in the `./sample_data/` directory.
 ### Pretrained Weight
 To run this project, you will need face pretrained weight (`pretrained.pt`).
 These files must be created and saved in the `./weight/` directory.
+[`example.py`](https://github.com/your-repo/your-project/blob/main/example.py)
+
