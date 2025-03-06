@@ -36,10 +36,18 @@ This project is an official implementation of the paper **"Rewriting Photoplethy
 | PURE    | 24.61  | 0.638  |
 | UBFC    | 20.35  | 0.630  |
 
-## Intsallation
+## Usage
 
-### Install Dependencies
-```bash
-git clone https://github.com/your-repository/rePPG.git
-cd rePPG
-pip install -r requirements.txt
+### Data
+
+To run this project, you will need face video data (`face.npy`) and cPPG signal data (`cppg.npy`).
+These files must be created by the user and saved in the `./sample_data/` directory.
+
+#### Data Format
+- `face.npy`: A `numpy` array of Shape `(N, H, W, 3)`, containing face video data with N frames (e.g. `(1873, 256, 256, 3)`)
+- `cppg.npy`: A `numpy` array containing rPPG and cPPG signals, with the following dictionary structure
+```python
+{
+"cppg_signal": np.array([...]), # An array of cPPG signals of length N
+"cppg_bpm": np.array([...]) # An array of cPPG BPMs of length N
+}
