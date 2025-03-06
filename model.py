@@ -7,11 +7,12 @@ import numpy as np
 import time
 
 
-# we define Hour Glass network based on the paper
-# Stacked Hourglass Networks for Human Pose Estimation
-#       Alejandro Newell, Kaiyu Yang, and Jia Deng
-# the code is adapted from
-# https://github.com/umich-vl/pose-hg-train/blob/master/src/models/hg.lua
+# model.py
+# -------------------------------------------------------------------------------------
+# This model is based on the following implementation:
+# Hao Zhou, Sunil Hadap, Kalyan Sunkavalli, David W. Jacobs. "Deep Single-Image Portrait
+# Relighting." ICCV, 2019.
+# Original code: https://github.com/zhhoper/DPR/blob/master/model/defineHourglass_512_gray_skip.py
 
 
 def conv3X3(in_planes, out_planes, stride=1):
