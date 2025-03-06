@@ -45,7 +45,7 @@ These files must be created and saved in the `./sample_data/` directory.
 
 #### Data Format
 - `face.npy`: A `numpy` array of Shape `(N, H, W, 3)`, containing face video data with N frames (e.g. `(1873, 256, 256, 3)`)
-- `cppg.npy`: A `numpy` array containing rPPG and cPPG signals, with the following dictionary structure
+- `cppg.npy`: A `numpy` array containing cPPG signal, with the following dictionary structure
 ```python
 {
     "cppg_signal": np.array([...]), # An array of cPPG signals of length N
